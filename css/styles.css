@@ -8,9 +8,16 @@ img {
     /* Ajustar las imágenes a que tomen el espacio donde están contenidas. 
     Ej. en un div de 200px, si crece o disminuye el div, la imagen se adapta */
     max-width: 100%;
+    display: block;
+}
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Globales */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -47,6 +54,20 @@ a {
     height: 550px;
 }
 /* Categorías */
+.categorias h2 {
+    text-align: center;
+}
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #FFF;
+    border-bottom-right-radius: 10px;
+}
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
