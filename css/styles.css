@@ -4,6 +4,11 @@ html {
 *, *:before, *:after {
     box-sizing: border-box;
 }
+img {
+    /* Ajustar las imágenes a que tomen el espacio donde están contenidas. 
+    Ej. en un div de 200px, si crece o disminuye el div, la imagen se adapta */
+    max-width: 100%;
+}
 
 /* Globales */
 a {
@@ -12,6 +17,7 @@ a {
 }
 .contenedor {
     max-width: 1200px;
+    /* centrar el contenido de forma horizontal */
     margin: 0 auto;
 }
 
@@ -31,10 +37,19 @@ a {
 }
 .nav-principal {
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .hero {
     background-image: url('../images/principal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+}
+/* Categorías */
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* separación */
+    gap: 20px;
 }
