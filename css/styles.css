@@ -198,6 +198,7 @@ a {
 .grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 .footer-menu a {
     display: block;
