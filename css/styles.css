@@ -79,8 +79,10 @@ a {
 .text-center {
     text-align: center;
 }
-.max-width-30 {
-    max-width: 30rem;
+@media (min-width: 768px) {
+    .max-width-30 {
+        max-width: 30rem;
+    }
 }
 
 /* Header y Navegación */
@@ -341,15 +343,28 @@ a {
 }
 .entrada {
     border-bottom: 2px solid #e1e1e1;
-    padding-bottom: 4rem;
     margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+.entrada h2 {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .entrada h2 {
+        text-align: left;
+    }
+}
+.contenido-blog {
+    padding: 2rem;
 }
 .entrada:last-of-type {
     border-bottom: none;
 }
-.entrada-meta {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .entrada-meta {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .entrada-meta p {
     font-weight: 900;
