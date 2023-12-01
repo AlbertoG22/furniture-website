@@ -286,14 +286,26 @@ a {
 }
 .site-footer h3 {
     margin-bottom: 0.5rem;
-}
-.grid-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     text-align: center;
+}
+@media (min-width: 768px) {
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+}
+.grid-footer > div {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .grid-footer > div {
+        margin-bottom: 0;
+    }
 }
 .footer-menu a {
     display: block;
+    text-align: center;
 }
 .copyright {
     margin-top: 5rem;
